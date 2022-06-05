@@ -1,3 +1,6 @@
+
+@import url('http://fonts.cdnfonts.com/css/monument-extended');
+
 body{
     display: grid;
     grid-template-rows: repeat(3,auto);
