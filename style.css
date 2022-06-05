@@ -1,6 +1,12 @@
 
-@import url('http://fonts.cdnfonts.com/css/monument-extended');
+@font-face {
+    font-family: 'monument_extendedregular';
+    src: url('fonts/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/monumentextended-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 body{
     display: grid;
     grid-template-rows: repeat(3,auto);
@@ -10,7 +16,7 @@ body{
     background-color: rgb(119, 119, 104);
 }
 *{
-    font-family: 'Monument Extended', sans-serif;
+    font-family: 'monument_extendedregular';
 }
 /*HEADER*/
 header{
