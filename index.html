@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preload" href="img/main/fondoCode.png" as="image">
+    <link rel="preload" as="image" href="img/main/fondoCode.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +10,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/shortCutIcon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
-            <a class="navbar-brand" href="#"><img src="img/header/logoBlanco.png" alt="" width="170" height="70"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/header/logoBlanco.png" alt="" width="150" height="50"></a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a href="">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+            <div class="languaje">
+                <div>
+                    <a href=""><img src="img/header/Bandera_de_España_(sin_escudo).svg.png" alt=""></a>
+                </div>
+                <div>
+                    <a href=""><img src="img/header/Bandera-de-Reino-Unido.png" alt=""></a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section class="inicio">
             <div class="bienvenida">
                 <h2>JUAN ROPERO</h2>
-                <p>Desarrollador web</p>
+                <p>Desarrollador web <i class="fa-solid fa-laptop-code"></i></p>
             </div>
         </section>
     </main>
