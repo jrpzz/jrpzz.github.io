@@ -8,29 +8,79 @@
 
 }
 body{
+    background-image: url(img/header/PruebaFondo.png);
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 5rem 15rem 5rem 15rem;
+    box-shadow:inset 0px 0px 26px -1px rgba(104, 100, 48, 0.5);
+}
+.back{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(200px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0px 0px 26px -1px rgba(104, 100, 48, 0.5);
+}
+.estructure{
     display: grid;
     grid-template-rows: repeat(3,auto);
     grid-template-columns: 1fr 3fr 1fr;
-    margin: 0px;
-    box-sizing: border-box;
-    background-color: rgb(119, 119, 104);
 }
 *{
     font-family: 'monument_extendedregular';
+}
+/*ANIMACION*/
+a {
+    background-image: linear-gradient(
+      to right,
+      #000000,
+      #000000 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before{
+    content: '';
+    background: #000000;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a.navEnlace:hover {
+   background-position: 0;
+  }
+  
+  a.navEnlace:hover::before{
+    width: 100%;
+  }
+.biggerCenter 
+{
+    transform:scale(1); transition:transform 0.2s linear; 
+}
+.biggerCenter:hover
+{
+  transform:translate(+0%, +0%) scale(1.1);
 }
 /*HEADER*/
 header{
     grid-row: 1/2;
     grid-column: 1/-1;
-    /*background-color: rgb(185, 185, 164);*/
-    background-color: rgb(73, 73, 62);
-    box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.4);
-    box-shadow: inset 0px 2px 40px 5px rgba(0,0,0,0.30);
-    position:fixed;
     top: 0px;
     width: 100%;
-    overflow: hidden;
-    z-index: 999;
 }
 nav{
     display: flex;
@@ -42,28 +92,26 @@ nav img{
 }
 nav > ul > li > a{
     text-decoration: none;
-    color: whitesmoke; 
+    color: black;
     margin-left: 3rem;
+    padding: 0px;
 }
 nav > ul > li > a:hover{
-    color: wheat;
+    color: rgb(0, 0, 0);
 }
-.languaje{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 10%;
+.dropdown a{
+    color: black;
+    text-decoration: none;
 }
-.languaje div{
-    width: 12%;
-    margin-right: 2rem;
+a.dropdown-item{
+    color: white ;
 }
-.languaje > div > a > img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    cursor: pointer;
+.bandera{
+    max-width: 10%;
+} 
+.dropdown-menu{
+    background-color: rgb(200, 209, 80);
+    width: fit-content;
 }
 /*MAIN*/
 main{
@@ -71,31 +119,9 @@ main{
     grid-column: 1/-1; 
     height: 1500px; 
     margin-top: 5rem;
-    box-shadow: inset 0px 2px 40px 5px rgba(0,0,0,0.18);
 }
-/*INICIO*/
-.inicio{
-    height: 17vh;
-    padding: 3rem;
-    background-image: url("img/main/fondoCode.png");
-    background-repeat: round;
-}
-.bienvenida{
-    text-align: center;
-    width: fit-content;
-    margin: auto;
-    margin-top: 4rem;
-    padding: 1rem;
-    border-radius: 20px;
-    color: wheat;
-    backdrop-filter: blur(5px);
-}
-.bienvenida h2{
-    font-size: 1.5rem;
-}
-.bienvenida p{
-    font-size: smaller;
-}
+
+/*FOOTER*/
 footer{
     grid-row: 3/4;
     grid-column: 1/-1;
