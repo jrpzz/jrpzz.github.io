@@ -17,7 +17,7 @@ body{
 .back{
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(160px);
     border-radius: 20px;
     box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.22);
 }
@@ -30,7 +30,7 @@ body{
     font-family: 'monument_extendedregular';
 }
 /*ANIMACION*/
-a {
+nav a {
     background-image: linear-gradient(
       to right,
       #000000,
@@ -47,7 +47,7 @@ a {
     transition: all 0.3s ease-in-out;
   }
   
-  a:before{
+  nav a:before{
     content: '';
     background: #000000;
     display: block;
@@ -82,6 +82,9 @@ header{
     width: 100%;
     padding: 0rem 4rem 0rem 4rem;
     margin-bottom:5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 nav{
     display: flex;
@@ -100,19 +103,12 @@ nav > ul > li > a{
 nav > ul > li > a:hover{
     color: rgb(0, 0, 0);
 }
-.dropdown a{
+.redes{
+    font-size: 1.7rem;
+}
+.redes>a>i{
+    cursor: pointer;
     color: black;
-    text-decoration: none;
-}
-a.dropdown-item{
-    color: white ;
-}
-.bandera{
-    max-width: 10%;
-} 
-.dropdown-menu{
-    background-color: rgb(230, 230, 230);
-    width: fit-content;
 }
 /*MAIN*/
 main{
@@ -162,12 +158,16 @@ section.competencias{
     padding: 10rem;
 }
 .todosLenguajes{
+    width: 70%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    background-color: rgb(172, 172, 151);
 }
 .lenguaje{
-    width: 10%;
+    width: 15%;
 }
 .lenguaje img{
     width: 100%;
