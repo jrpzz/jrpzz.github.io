@@ -167,7 +167,7 @@ section.competencias{
     background-color: rgb(172, 172, 151);
 }
 .lenguaje{
-    width: 15%;
+    width: 20%;
 }
 .lenguaje img{
     width: 100%;
@@ -175,7 +175,7 @@ section.competencias{
     object-fit: contain;
 }
 .lenguaje{
-    margin: 5rem 2rem 5rem 2rem;
+    margin: 2rem 0rem 2rem 0rem;
 }
 /*FOOTER*/
 footer{
