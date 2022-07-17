@@ -149,7 +149,7 @@ section.inicio{
 .foto img{
     width: 100%;
     filter: drop-shadow(-26px -2px 0px #c7be41);
-    margin-top: 10rem;
+    margin-top: 18rem;
 }
 /*LENGUAJES*/
 section.competencias{
@@ -183,3 +183,205 @@ footer{
     grid-column: 1/-1;
     background-color: rgb(44, 41, 37);
 }
+/*MEDIA*/
+/*Tablet*/
+@media (min-width: 1000px) and (max-width: 1500px){
+    body{
+        padding: 1rem 4rem 1rem 4rem;
+    }
+    .desc h2{
+        font-size: 3rem;
+    }
+    .desc h3{
+        font-size: 1.5rem;
+    }
+    .desc p,.desc b{
+        font-size: 0.85rem;
+    }
+    .foto img{
+        margin-top: 23rem;
+    }
+    .redes{
+        font-size: 1.2rem;
+    }
+    a.navEnlace{
+        margin: 1rem;
+    }
+    nav img{
+        width: 70%;
+        object-fit: contain;
+    }
+}
+/*Portrait*/
+@media (min-width: 750px) and (max-width: 1000px){
+    body{
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    main section{
+        width: 85%;
+    }
+    a.navbar-brand{
+        margin: 0px;
+    }
+    .desc h2{
+        font-size: 2.3rem;
+    }
+    .desc h3{
+        font-size: 1.2rem;
+    }
+    .desc p,.desc b{
+        font-size: 0.85rem;
+    }
+    .redes{
+        font-size: 1.1rem;
+    }
+    a.navEnlace{
+        margin: 0.5rem;
+        font-size: 0.9rem;
+    }
+    section.competencias{
+        padding: 5rem;
+    }
+    .todosLenguajes{
+        width: 70%;
+    }
+    nav img{
+        width: 45%;
+        object-fit: contain;
+    }
+}
+@media (min-width: 550px) and (max-width: 750px){
+    body{
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    header{
+        margin-bottom: 1rem;
+    }
+    main section{
+        width: 85%;
+    }
+    a.navbar-brand{
+        margin: 0px;
+    }
+    .desc h2{
+        font-size: 2.6rem;
+    }
+    .desc h3{
+        font-size: 1.5rem;
+    }
+    .desc p,.desc b{
+        font-size: 0.85rem;
+    }
+    .redes{
+        font-size: 1.1rem;
+    }
+    a.navEnlace{
+        margin: 0.5rem;
+        font-size: 0.9rem;
+    }
+    section.inicio{
+        flex-wrap: wrap;
+    }
+    .desc{
+        width: 80%;
+        margin: auto;
+    }
+    .foto {
+        width: 50%;
+        margin: auto;
+    }
+    .foto img{
+        margin-top: 3rem;
+    }
+    section.competencias{
+        padding: 5rem;
+    }
+    .todosLenguajes{
+        width: 70%;
+    }
+    nav img{
+        width: 45%;
+        object-fit: contain;
+    }
+    section.competencias{
+        padding: 10rem 2rem 10rem 2rem;
+    }
+    .todosLenguajes{
+        width: 95%;
+    }
+}
+@media (max-width: 550px){
+    body{
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    header{
+        margin-bottom: 1rem;
+    }
+    main section{
+        width: 85%;
+    }
+    a.navbar-brand{
+        margin: 0px;
+    }
+    .desc h2{
+        font-size: 3;
+    }
+    .desc h3{
+        font-size: 1.5rem;
+    }
+    .redes{
+        font-size: 1.1rem;
+    }
+    a.navEnlace{
+        margin: 0.5rem;
+        font-size: 0.9rem;
+    }
+    section.inicio{
+        flex-wrap: wrap;
+    }
+    .desc{
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+    }
+    .foto {
+        width: 50%;
+        margin: auto;
+    }
+    .foto img{
+        margin-top: 1rem;
+    }
+    section.competencias{
+        padding: 5rem;
+    }
+    .todosLenguajes{
+        width: 70%;
+    }
+    nav img{
+        width: 45%;
+        object-fit: contain;
+    }
+    section.competencias{
+        padding: 10rem 1rem 10rem 1rem;
+    }
+    .todosLenguajes{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+    .lenguaje{
+        width: 50%;
+    }
+    .h2Movil{
+        display: contents;
+    }
+    .h2PC{
+        display: none;
+    }
+    .pPC{
+        display: none;
+    }
+}
+
