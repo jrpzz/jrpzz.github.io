@@ -183,6 +183,9 @@ footer{
     grid-column: 1/-1;
     background-color: rgb(44, 41, 37);
 }
+.h2Movil{
+    display: none;
+}
 /*MEDIA*/
 /*Tablet*/
 @media (min-width: 1000px) and (max-width: 1500px){
